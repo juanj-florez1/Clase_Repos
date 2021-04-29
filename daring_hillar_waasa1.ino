@@ -1,14 +1,16 @@
+int pinLED = 2;
+
 void setup()
 {
-  pinMode(2, OUTPUT);
+  pinMode(pinLED, OUTPUT);
   
-  digitalWrite(2,1);
+  digitalWrite(pinLED,1);
 }
 
 void loop()
 {
-  digitalWrite(13, HIGH);
+  digitalWrite(pinLED, HIGH);
   delay(1000); // Wait for 1000 millisecond(s)
-  digitalWrite(13, LOW);
+  digitalWrite(pinLED, LOW);
   delay(1000); // Wait for 1000 millisecond(s)
 }
